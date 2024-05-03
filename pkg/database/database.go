@@ -17,6 +17,8 @@ func (d *Database) Get(key string) (interface{}, bool) {
 	d.Lock()
 	defer d.Unlock()
 	val, ok := d.data[key]
+
+	//test
 	return val, ok
 }
 
